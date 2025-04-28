@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- 상단 바 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#32CD32"
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:padding="10dp">
+
+        <!-- 뒤로가기 버튼 -->
+        <ImageView
+            android:id="@+id/btnB"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/back"
+            android:contentDescription="뒤로가기"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp" />
+
+        <!-- 제목 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="복약 이력"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- 홈 버튼 -->
+        <ImageView
+            android:id="@+id/btnH"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/home"
+            android:contentDescription="홈으로 이동"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- 라디오 버튼 그룹 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/rbLatest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최신 순"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginEnd="20dp" />
+
+        <RadioButton
+            android:id="@+id/rbOldest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="과거 순"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <!-- 편집 버튼 -->
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#32CD32"
+            android:text="편집"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="50dp"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:elevation="4dp" />
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- 중앙 텍스트 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:text="등록된 복약 이력이 없습니다."
+        android:textColor="#000000"
+        android:textSize="16sp"
+       />
+</LinearLayout>

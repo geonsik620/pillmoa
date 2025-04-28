@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 툴바 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_top_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+
+        >
+
+        <!-- 뒤로가기 아이콘 -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back" />
+
+
+        <!-- 타이틀 텍스트 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="알람 기본 설정"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            />
+
+        <!-- 홈 아이콘 -->
+        <ImageView
+            android:id="@+id/btnH"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_home" /> <!-- 홈 아이콘으로 교체 -->
+
+    </LinearLayout>
+
+    <!-- 공백 공간 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/alarm_duration_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@drawable/rounded_button_white"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/alarm_duration_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="알람 지속시간 기본값"
+            android:textSize="16sp"
+            android:textColor="#4D4D4D"
+            />
+
+        <TextView
+            android:id="@+id/alarm_duration_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5분"
+            android:textSize="16sp"
+            android:textColor="#4D4D4D" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/snooze_duration_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@drawable/rounded_button_white"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/snooze_duration_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="알람 다시울림 기본값"
+            android:textSize="16sp"
+            android:textColor="#4D4D4D" />
+
+        <TextView
+            android:id="@+id/snooze_duration_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30분 후"
+            android:textSize="16sp"
+            android:textColor="#4D4D4D" />
+    </LinearLayout>
+
+
+</LinearLayout>

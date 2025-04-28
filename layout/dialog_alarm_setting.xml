@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="지속시간"
+        android:textSize="18sp"
+        android:paddingBottom="10dp"
+        android:textColor="#4D4D4D" />
+
+    <RadioGroup
+        android:id="@+id/duration_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_30sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30초" />
+
+        <RadioButton
+            android:id="@+id/radio_1min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1분" />
+
+        <RadioButton
+            android:id="@+id/radio_3min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3분" />
+
+        <RadioButton
+            android:id="@+id/radio_5min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5분" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+</LinearLayout>

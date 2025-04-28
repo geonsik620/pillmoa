@@ -1,0 +1,82 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- 툴바 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#32CD32"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- 뒤로가기 아이콘 -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/back"
+            android:padding="8dp"/>
+
+
+        <!-- 타이틀 텍스트 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="처방전 열람"
+            android:textColor="#FFFFFF"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <!-- 홈 아이콘 -->
+        <ImageView
+            android:id="@+id/homeButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:contentDescription="TODO"
+            android:padding="8dp"
+            android:src="@drawable/home" /> <!-- 홈 아이콘으로 교체 -->
+
+    </LinearLayout>
+
+    <!-- QR 코드 검색 버튼 -->
+    <Button
+        android:id="@+id/qrCodeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:text="처방전 QR코드 검색"
+        android:backgroundTint="#32CD32"/>
+
+
+    <!-- OCR 검색 버튼 -->
+    <Button
+        android:id="@+id/ocrButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:text="처방전 OCR 검색"
+        android:backgroundTint="#32CD32"/>
+
+    <!-- 사진 OCR 검색 버튼 -->
+    <Button
+        android:id="@+id/photoOcrButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:text="처방전 사진 OCR 검색"
+        android:backgroundTint="#32CD32"/>
+</LinearLayout>

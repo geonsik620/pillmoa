@@ -1,0 +1,121 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 상단 바 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#32CD32"
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:padding="10dp">
+
+        <!-- 뒤로가기 버튼 -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/back"
+            android:contentDescription="뒤로가기"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp" />
+
+        <!-- 제목 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="음성도움말"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- 홈 버튼 -->
+        <ImageView
+            android:id="@+id/btnH"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/home"
+            android:contentDescription="홈으로 이동"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Button List -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/buttonIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="필모아 소개"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button_background"
+            android:textSize="18sp"
+            android:padding="25dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/buttonSearchInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="의약품 정보 검색 방법"
+            android:textColor="#000000"
+            android:background="@drawable/rounded_button_white"
+            android:textSize="18sp"
+            android:padding="25dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/buttonPrescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="처방전 열람 방법"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button_background"
+            android:textSize="18sp"
+            android:padding="25dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/buttonSearchHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="검색 이력 이용 방법"
+            android:textColor="#000000"
+            android:background="@drawable/rounded_button_white"
+            android:textSize="18sp"
+            android:padding="25dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/buttonSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="환경설정 이용 방법"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button_background"
+            android:textSize="18sp"
+            android:padding="25dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/buttonInquiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기타문의"
+            android:textColor="#000000"
+            android:background="@drawable/rounded_button_white"
+            android:textSize="18sp"
+            android:padding="25dp"/>
+    </LinearLayout>
+</LinearLayout>
